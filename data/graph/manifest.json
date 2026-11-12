@@ -1,0 +1,27 @@
+{
+  "nodes": {
+    "pr": 87487,
+    "repo": 9819,
+    "commit": 254848,
+    "file": 808239,
+    "review": 87487,
+    "comment": 30550,
+    "person": 38252
+  },
+  "relations": {
+    "pr_repo": 87487,
+    "pr_author": 87487,
+    "pr_commit": 260755,
+    "commit_author": 260748,
+    "pr_commit_file": 1743598,
+    "pr_review": 87487,
+    "review_reviewer": 87487,
+    "review_comment": 30550,
+    "comment_file": 26544,
+    "comment_commit": 26868,
+    "comment_author": 30550,
+    "pr_review_reviewer_file": 19498,
+    "pr_actor_event": 1142614,
+    "pr_issue_unverified": 26113
+  }
+}
