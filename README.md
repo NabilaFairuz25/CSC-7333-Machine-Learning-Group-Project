@@ -28,3 +28,23 @@ The `graph/` folder contains seven node tables representing entities extracted f
 | `nodes_review.parquet` | First Human Review | 87,487 |
 | `nodes_comment.parquet` | Inline Review Comment | 30,550 |
 | `nodes_person.parquet` | Person | 38,252 |
+
+
+
+## 2. Existing Pairwise Relationships (1-Cell Candidates)
+
+The `graph/` folder contains the following 11 pairwise relationship tables, which can be used to construct 1-cells for the combinatorial complex.
+
+| Relationship File | Connected Entities | Number of Records |
+|---|---|---:|
+| `rel_pr_repo.parquet` | PR ↔ Repository | 87,487 |
+| `rel_pr_author.parquet` | PR ↔ Person (Author) | 87,487 |
+| `rel_pr_commit.parquet` | PR ↔ Commit | 260,755 |
+| `rel_commit_author.parquet` | Commit ↔ Person (Author) | 260,748 |
+| `rel_pr_review.parquet` | PR ↔ First Human Review | 87,487 |
+| `rel_review_reviewer.parquet` | Review ↔ Person (Reviewer) | 87,487 |
+| `rel_review_comment.parquet` | Review ↔ Inline Comment | 30,550 |
+| `rel_comment_author.parquet` | Comment ↔ Person (Author) | 30,550 |
+| `rel_comment_file.parquet` | Comment ↔ Modified File | 26,544 |
+| `rel_comment_commit.parquet` | Comment ↔ Commit | 26,868 |
+| `rel_pr_actor_event.parquet` | PR ↔ Person (Timeline Actor) | 1,142,614 |
